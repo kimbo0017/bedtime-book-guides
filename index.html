@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kimbo - Children's Book Author | Bedtime Book of Impossible Questions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>✨ Kimbo's Books</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#books">Books</a></li>
+                <li><a href="#guides">Guides</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Welcome to Kimbo's Magical World of Stories!</h1>
+                <p>Discover funny, wonderful, and impossible adventures for kids of all ages</p>
+                <button class="btn btn-primary" onclick="document.getElementById('books').scrollIntoView({behavior: 'smooth'})">
+                    Explore Books
+                </button>
+            </div>
+            <div class="hero-image">
+                <div class="book-icon">📚</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Books Section -->
+    <section id="books" class="books-section">
+        <div class="container">
+            <h2>Featured Books</h2>
+            <div class="books-grid">
+                <!-- Book 1: Bedtime Book -->
+                <div class="book-card">
+                    <div class="book-cover">🌙</div>
+                    <h3>The Bedtime Book of Impossible Questions</h3>
+                    <p>Solving children's weird and wonderful questions with SCIENCE!</p>
+                    <p class="book-description">
+                        Why do we dream? How do stars shine? What makes rainbows? Join us on a magical bedtime journey as we explore impossible questions and discover amazing scientific answers!
+                    </p>
+                    <div class="book-details">
+                        <span class="age-range">Ages 5-10</span>
+                        <span class="pages">128 Pages</span>
+                    </div>
+                    <div class="book-links">
+                        <a href="https://www.amazon.com" target="_blank" class="btn btn-secondary">Buy on Amazon</a>
+                        <a href="books/bedtime-book.html" class="btn btn-outline">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- Book 2: Shh! We Have a Plan -->
+                <div class="book-card">
+                    <div class="book-cover">🤫</div>
+                    <h3>Shh! We Have a Plan</h3>
+                    <p>A gloriously funny read aloud adventure</p>
+                    <p class="book-description">
+                        A hilarious tale of friendship and clever planning! Watch as a group of unlikely friends work together to solve problems in the most creative and funny ways imaginable.
+                    </p>
+                    <div class="book-details">
+                        <span class="age-range">Ages 4-8</span>
+                        <span class="pages">96 Pages</span>
+                    </div>
+                    <div class="book-links">
+                        <a href="https://www.amazon.com" target="_blank" class="btn btn-secondary">Buy on Amazon</a>
+                        <a href="books/shh-plan.html" class="btn btn-outline">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- Coming Soon -->
+                <div class="book-card coming-soon">
+                    <div class="book-cover">⏳</div>
+                    <h3>Coming Soon!</h3>
+                    <p>More magical adventures on the way...</p>
+                    <p class="book-description">
+                        Stay tuned for more exciting stories from Kimbo! Subscribe to our newsletter to be the first to know about new releases.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guides Section -->
+    <section id="guides" class="guides-section">
+        <div class="container">
+            <h2>Teacher & Parent Guides</h2>
+            <p class="section-subtitle">Free downloadable resources to enhance reading with your children</p>
+            <div class="guides-grid">
+                <div class="guide-card">
+                    <h3>📖 Reading Guide</h3>
+                    <p>Discussion questions and activities to extend learning</p>
+                    <a href="guides/reading-guide.pdf" class="btn btn-secondary" download>Download PDF</a>
+                </div>
+                <div class="guide-card">
+                    <h3>🎨 Activity Worksheets</h3>
+                    <p>Fun coloring pages and creative exercises</p>
+                    <a href="guides/activity-worksheets.pdf" class="btn btn-secondary" download>Download PDF</a>
+                </div>
+                <div class="guide-card">
+                    <h3>❓ Science Experiments</h3>
+                    <p>Hands-on experiments inspired by the books</p>
+                    <a href="guides/science-experiments.pdf" class="btn btn-secondary" download>Download PDF</a>
+                </div>
+                <div class="guide-card">
+                    <h3>🎭 Classroom Activities</h3>
+                    <p>Group activities and performance ideas</p>
+                    <a href="guides/classroom-activities.pdf" class="btn btn-secondary" download>Download PDF</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Kimbo</h2>
+                    <p>
+                        Hello! I'm Kimbo, a children's book author passionate about creating stories that make kids laugh, wonder, and discover the magic of reading.
+                    </p>
+                    <p>
+                        My mission is to write books that entertain children while inspiring curiosity about the world around them. Through humor, adventure, and imagination, I believe every child can fall in love with reading.
+                    </p>
+                    <p>
+                        When I'm not writing, you can find me exploring nature, brainstorming silly ideas, and spending time with the amazing young readers who inspire my work.
+                    </p>
+                </div>
+                <div class="about-image">
+                    <div class="author-avatar">👋</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <h2>Join Our Magical Reading Club!</h2>
+            <p>Get updates on new releases, exclusive content, and fun reading tips</p>
+            <form class="newsletter-form" onsubmit="handleNewsletterSignup(event)">
+                <input type="email" placeholder="Enter your email address" required>
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+            <p class="form-note">We respect your privacy. Unsubscribe at any time.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <p class="section-subtitle">Have questions? Love my books? Let's connect!</p>
+            <form class="contact-form" onsubmit="handleContactForm(event)">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Kimbo - Children's Book Author. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" title="Facebook">f</a>
+                <a href="#" title="Twitter">𝕏</a>
+                <a href="#" title="Instagram">📷</a>
+                <a href="#" title="Pinterest">P</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
